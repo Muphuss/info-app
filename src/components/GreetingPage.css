@@ -1,0 +1,112 @@
+.greeting-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.greeting-page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+.greeting-page p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-out;
+}
+
+.greeting-page .get-started-button {
+  animation: fadeIn 2s ease-out;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #0078d4;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.greeting-page .get-started-button:hover {
+  background: #005a9e;
+}
+
+.greeting-page .get-started-button:active {
+  background: #004578;
+  transform: scale(0.98); 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .greeting-page h1 {
+    font-size: 23px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .greeting-page p {
+    font-size: 15px;
+    margin: 15px;
+  }
+}
+
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background: #0078d4;
+  border-radius: 50%;
+  opacity: 0;
+  animation: particle 1s infinite;
+}
+
+@keyframes particle {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.particle:nth-child(odd) {
+  animation-duration: 1.2s;
+}
+
+.particle:nth-child(even) {
+  animation-duration: 1.8s;
+}

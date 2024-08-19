@@ -1,0 +1,82 @@
+[
+    {
+        "name": "AMAG",
+        "url": "https://www.amag.ch/de/",
+        "logo": "???",
+        "description": "AMAG ist die grösste Automobilhandelsgruppe der Schweiz und bietet ein umfassendes Dienstleistungsangebot rund ums Auto.",
+        "Projekte": [
+            {
+                "name": "AMAG CH",
+                "url": "https://www.amag.ch/de/",
+                "logo": "???",
+                "description": "AMAG's online Auftritt für die Schweiz(Hauptsitz)"
+            }
+        ],
+        "applications": [
+            {
+                "name": "AMAG Zeiterfassung",
+                "url": "https://zeiterfassung.amag.ch/",
+                "logo": "???",
+                "description": "Zeiterfassung für AMAG Mitarbeiter"
+            },
+            {
+                "name": "AMAG Intranet",
+                "url": "https://intranet.amag.ch/",
+                "logo": "???",
+                "description": "Intranet für AMAG Mitarbeiter"
+            },
+            {
+                "name": "AMAG Webmail",
+                "url": "https://webmail.amag.ch/",
+                "logo": "???",
+                "description": "Webmail für AMAG Mitarbeiter"
+            },
+            {
+                "name": "AMAG Wiki",
+                "url": "https://wiki.amag.ch/",
+                "logo": "???",
+                "description": "Wiki für AMAG Mitarbeiter"
+            }
+        ]
+    },
+    {
+        "name": "DZ Bank",
+        "url": "https://www.dzbank.de/",
+        "logo": "???",
+        "description": "Die DZ Bank AG ist das Spitzeninstitut der Genossenschaftlichen FinanzGruppe Volksbanken Raiffeisenbanken.",
+        "Projekte": [
+            {
+                "name": "SVRBP",
+                "url": "https://www.vr-bankenportal.de/",
+                "logo": "???",
+                "description": "Das Smarte VR-Bankenportal(SVRBP) ist ein Online-Portal für die Volksbanken Raiffeisenbanken."
+            },
+            {
+                "name": "DZ Bank",
+                "url": "https://www.dzbank.de/",
+                "logo": "???",
+                "description": "DZ Bank's online Auftritt"
+            }
+        ],
+        "applications": [
+            {
+                "name": "DZ Bank Citrix",
+                "url": "https://partner.dzbank.de/",
+                "logo": "???",
+                "description": "Citrix für DZ Bank Mitarbeiter"
+            },
+            {
+                "name": "Genowiki",
+                "url": "https://www.genowiki.de/",
+                "logo": "???",
+                "description": "Wiki für DZ Bank Mitarbeiter"
+            },
+            {
+                "name": "DZ Bank GitLab",
+                "url": "https://git.dzbank.vrnet/",
+                "logo": "???",
+                "description": "GitLab für DZ Bank Mitarbeiter"
+            }
+        ]
+    }
+]

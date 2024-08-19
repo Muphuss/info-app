@@ -1,0 +1,115 @@
+/* src/components/OtherPage.css */
+
+.other-page {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 2s ease-out;
+}
+
+.other-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.contact-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.contact-item p a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+.contact-item p a:hover {
+  text-decoration: underline;
+}
+
+.additional-info {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.additional-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.additional-info p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .other-page {
+    padding: 10px;
+  }
+
+  .other-page h1 {
+    font-size: 2rem;
+  }
+
+  .contact-item h2,
+  .additional-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-item p,
+  .additional-info p {
+    font-size: 1rem;
+  }
+}
+
+.additional-info a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  color: #005290;
+  text-decoration: none;
+}

@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.about-us-page {
+  padding: 20px;
+  background-color: rgb(26, 28, 28);
+  min-height: 100vh;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.about-us-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  padding: 0 15px;
+}
+
+.about-us-menu a {
+  text-decoration: none;
+  color: #f5f5f5;
+  margin-top: 10px;
+  padding: 8px 12px;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-us-menu a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+@media screen and (min-width: 769px) {
+  .about-us-menu {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .about-us-menu a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    width: auto;
+  }
+}
+
+.office-overview,
+.team-members,
+.office-images,
+.contact-info {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.office-overview h2,
+.team-members h2,
+.office-images h2,
+.contact-info h2 {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+
+.office-overview p,
+.team-members p,
+.contact-info p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #0057b3bb;
+}
+
+.team-member h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+  color: #f5f5f5;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+.office-images {
+  text-align: center;
+}
+
+.office-images .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.office-images img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.office-images img:hover {
+  transform: scale(1.05);
+}
+
+.about-us-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-menu {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-us-menu a {
+    padding: 5px;
+    margin: 0 10px;
+  }
+
+  .office-overview,
+  #timeline-section,
+  #team-section,
+  #gallery-section {
+    margin-left: 0;
+    padding: 40px 10px;
+  }
+}
+
+.new-page-gallery img,
+.team-member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.new-page-gallery img:hover,
+.team-member img:hover {
+  transform: scale(1.8);
+  cursor: pointer;
+}
+
+.parallax-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.parallax-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.parallax-content p {
+  font-size: 0.8rem;
+}
+
+.parallax-container {
+  position: relative;
+  height: 250px;
+  width: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 700px;
+}

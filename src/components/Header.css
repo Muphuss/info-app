@@ -1,0 +1,91 @@
+.header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.menu-btn {
+  font-size: 20px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-btn:hover {
+  color: #cccccc;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  margin: 0px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.logo-span {
+  color: rgb(4, 37, 149);
+}
+
+.logo-span-light {
+  color: rgb(16, 135, 192);
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.header-links a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.header-links a.active {
+  color: #0078d4;
+}
+
+.header-links a i {
+  margin-right: 8px;
+  transition: 0s;
+}
+
+.header-links a:hover {
+  color: #0078d4;
+}
+
+@media screen and (max-width: 401px) {
+  .header-content {
+    font-size: 10px;
+  }
+}

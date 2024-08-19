@@ -1,0 +1,48 @@
+
+.hamburger-button {
+  position: relative;
+  width: 30px; 
+  height: 20px; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hamburger-button i {
+  position: relative;
+  display: block;
+  width: 30px; 
+  height: 2px; 
+  background: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-button i:nth-child(1) {
+  transform: rotate(0); 
+}
+
+.hamburger-button i:nth-child(2) {
+  transform: rotate(0); 
+  opacity: 1;
+}
+
+.hamburger-button i:nth-child(3) {
+  transform: rotate(0); 
+}
+
+.hamburger-button.open i:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger-button.open i:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburger-button.open i:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px); 
+}
+
+.hamburger-button:active {
+  transform: scale(0.9);
+}
